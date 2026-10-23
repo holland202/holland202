@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Public repository category distribution</title>
+  <desc id="desc">Distribution of 26 public repositories across five categories, October 22, 2026. Principia 1, Veritas 9, Geometric 2, Edge 4, Tools 10.</desc>
+  <rect width="640" height="360" fill="#0d1117"/>
+  <!-- Donut using stroke-dasharray on circles (percentages of 26) -->
+  <!-- Circumference ~ 2*pi*90 ≈ 565.5 -->
+  <!-- Tools/Other 10/26 ≈ 38.46% → 217.5 -->
+  <!-- Veritas 9/26 ≈ 34.62% → 195.8 -->
+  <!-- Edge 4/26 ≈ 15.38% → 87.0 -->
+  <!-- Geometric 2/26 ≈ 7.69% → 43.5 -->
+  <!-- Principia 1/26 ≈ 3.85% → 21.7 -->
+  <g transform="translate(220,180)">
+    <circle r="90" fill="none" stroke="#21262d" stroke-width="36"/>
+    <!-- Tools/Other #a78bfa -->
+    <circle r="90" fill="none" stroke="#a78bfa" stroke-width="36"
+            stroke-dasharray="217.5 565.5" stroke-dashoffset="0"
+            transform="rotate(-90)"/>
+    <!-- Veritas #34d399 -->
+    <circle r="90" fill="none" stroke="#34d399" stroke-width="36"
+            stroke-dasharray="195.8 565.5" stroke-dashoffset="-217.5"
+            transform="rotate(-90)"/>
+    <!-- Edge #22d3ee -->
+    <circle r="90" fill="none" stroke="#22d3ee" stroke-width="36"
+            stroke-dasharray="87.0 565.5" stroke-dashoffset="-413.3"
+            transform="rotate(-90)"/>
+    <!-- Geometric #f472b6 -->
+    <circle r="90" fill="none" stroke="#f472b6" stroke-width="36"
+            stroke-dasharray="43.5 565.5" stroke-dashoffset="-500.3"
+            transform="rotate(-90)"/>
+    <!-- Principia #fbbf24 -->
+    <circle r="90" fill="none" stroke="#fbbf24" stroke-width="36"
+            stroke-dasharray="21.7 565.5" stroke-dashoffset="-543.8"
+            transform="rotate(-90)"/>
+    <text text-anchor="middle" y="-6" fill="#e6edf3" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22" font-weight="600">26</text>
+    <text text-anchor="middle" y="18" fill="#8b949e" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12">public repos</text>
+  </g>
+  <!-- Legend -->
+  <g font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" fill="#e6edf3">
+    <rect x="400" y="70" width="14" height="14" rx="2" fill="#fbbf24"/>
+    <text x="424" y="81">Principia / Research notes — 1 (3.8%)</text>
+    <rect x="400" y="100" width="14" height="14" rx="2" fill="#34d399"/>
+    <text x="424" y="111">Veritas / Evidence &amp; Gate — 9 (34.6%)</text>
+    <rect x="400" y="130" width="14" height="14" rx="2" fill="#f472b6"/>
+    <text x="424" y="141">Geometric / Learning — 2 (7.7%)</text>
+    <rect x="400" y="160" width="14" height="14" rx="2" fill="#22d3ee"/>
+    <text x="424" y="171">Edge / Runtime / Swarm — 4 (15.4%)</text>
+    <rect x="400" y="190" width="14" height="14" rx="2" fill="#a78bfa"/>
+    <text x="424" y="201">Tools / Other — 10 (38.5%)</text>
+  </g>
+  <text x="320" y="330" text-anchor="middle" fill="#8b949e" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">
+    Snapshot 22 October 2026 · exclusive categories · public repositories only
+  </text>
+</svg>
