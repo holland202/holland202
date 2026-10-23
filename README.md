@@ -96,6 +96,20 @@ Representative members:
 
 ---
 
+### Contributions to other projects
+
+Defect reports and pull requests on repositories I don't own. Status as of 2026-10-22.
+
+| Project | Contribution | Status | Link |
+|---------|--------------|--------|------|
+| opena2a-standards/aap-conformance | Showed a verifier that skips the presenter-proof signature check (§4.6) still passed all 43 conformance fixtures | **Fixed by the maintainer** (PR #6, commit `f0d1339`) | [Issue #4](https://github.com/opena2a-standards/aap-conformance/issues/4) |
+| opena2a-standards/aap-conformance | Two fixtures pinning the UNKNOWN_KEY checks (follow-up to #4) | Open pull request, not yet reviewed | [PR #8](https://github.com/opena2a-standards/aap-conformance/pull/8) |
+| opena2a-org/oasb | Most test files bypass the adapter, so only 69 of 245 tests reach it | Open | [Issue #40](https://github.com/opena2a-org/oasb/issues/40) |
+| GenAI-Security-Project/agent-control-standard | `toolCallRequest` has no idempotency binding, so a retry can repeat an external effect | Open | [Issue #200](https://github.com/GenAI-Security-Project/agent-control-standard/issues/200) |
+| johnbenac/graphmd | Clarify slash-ref ambiguity for GH-005 repository imports | Closed, not merged | [PR #438](https://github.com/johnbenac/graphmd/pull/438) |
+
+---
+
 ### Technology & research methods
 
 **Languages & platforms**  
