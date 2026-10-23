@@ -1,0 +1,51 @@
+# Regenerates the README's contribution-activity graph once a day.
+# Replaces a third-party image service that went offline (HTTP 402) in October 2026.
+#
+# - No third-party actions: plain git and the runner's own python3.
+# - Checks run first; if they fail, or the data is missing/malformed, nothing is published
+#   and the previous image stays up (it is dated, so staleness is visible).
+# - The SVG goes to the `output` branch as a single commit replaced on each run,
+#   so `main`'s history does not grow by a commit a day.
+name: activity-graph
+
+on:
+  schedule:
+    - cron: "23 11 * * *"   # daily, 11:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: activity-graph
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Get the script from main
+        run: git clone --depth 1 "https://github.com/${GITHUB_REPOSITORY}.git" src
+
+      - name: Run the script's checks
+        run: python3 src/scripts/test_activity_graph.py
+
+      - name: Render the graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p out
+          python3 src/scripts/activity_graph.py --user "${GITHUB_REPOSITORY_OWNER}" --days 31 --out out/activity.svg
+
+      - name: Publish to the output branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd out
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add activity.svg
+          git commit -q -m "Activity graph, data through $(date -u +%F)"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
