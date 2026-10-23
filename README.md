@@ -89,10 +89,10 @@ Representative members:
 ### Contribution activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=holland202&theme=react-dark&bg_color=0d1117&color=34d399&line=22d3ee&point=a78bfa&area=true&hide_border=true" alt="Contribution activity graph" />
+  <img src="https://raw.githubusercontent.com/holland202/holland202/output/activity.svg" alt="Contribution activity, last 31 days" width="100%" />
 </p>
 
-> Statistics are supplied by third-party services. Contribution totals may differ from public-repository activity depending on GitHub visibility settings and provider methodology.
+> Generated daily in this repository by [`scripts/activity_graph.py`](scripts/activity_graph.py) from GitHub's public contribution calendar. The image states the date of its last data point.
 
 ---
 
