@@ -186,6 +186,16 @@ This profile does not list or link private repositories.
 
 <div align="center">
 
+<img src="assets/nyancat-termux.gif" alt="nyancat running in Termux on my phone" width="320" />
+
+<sub>nyancat running in Termux on my phone, where most of this work gets built.</sub>
+
+</div>
+
+---
+
+<div align="center">
+
 **Chad Holland** · Independent Researcher · Oklahoma, United States  
 
 Language percentages reflect byte-count ranking of public repositories.  
