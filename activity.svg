@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-labelledby="t d">
+<title id="t">Contribution activity, last 31 days</title>
+<desc id="d">987 contributions from 2026-09-24 to 2026-10-24; busiest day 2026-10-14 with 118.</desc>
+<rect width="900" height="320" rx="6" fill="#0d1117"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">
+<text x="56" y="32" font-size="18" font-weight="600" fill="#34d399">Contribution activity</text>
+<text x="56" y="52" font-size="12" fill="#8b949e">Last 31 days · 987 contributions</text>
+<line x1="56" y1="266.0" x2="872" y2="266.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="270.0" font-size="11" fill="#8b949e" text-anchor="end">0</text>
+<line x1="56" y1="217.0" x2="872" y2="217.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="221.0" font-size="11" fill="#8b949e" text-anchor="end">30</text>
+<line x1="56" y1="168.0" x2="872" y2="168.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="172.0" font-size="11" fill="#8b949e" text-anchor="end">60</text>
+<line x1="56" y1="119.0" x2="872" y2="119.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="123.0" font-size="11" fill="#8b949e" text-anchor="end">90</text>
+<line x1="56" y1="70.0" x2="872" y2="70.0" stroke="#21262d" stroke-width="1"/>
+<text x="48" y="74.0" font-size="11" fill="#8b949e" text-anchor="end">120</text>
+<text x="56.0" y="286" font-size="11" fill="#8b949e" text-anchor="middle">Sep 24</text>
+<text x="192.0" y="286" font-size="11" fill="#8b949e" text-anchor="middle">Sep 29</text>
+<text x="328.0" y="286" font-size="11" fill="#8b949e" text-anchor="middle">Oct 4</text>
+<text x="464.0" y="286" font-size="11" fill="#8b949e" text-anchor="middle">Oct 9</text>
+<text x="600.0" y="286" font-size="11" fill="#8b949e" text-anchor="middle">Oct 14</text>
+<text x="736.0" y="286" font-size="11" fill="#8b949e" text-anchor="middle">Oct 19</text>
+<text x="872.0" y="286" font-size="11" fill="#8b949e" text-anchor="middle">Oct 24</text>
+<polygon points="56.0,266.0 56.0,207.2 83.2,251.3 110.4,148.4 137.6,225.2 164.8,257.8 192.0,264.4 219.2,230.1 246.4,212.1 273.6,203.9 300.8,184.3 328.0,168.0 355.2,194.1 382.4,261.1 409.6,266.0 436.8,189.2 464.0,217.0 491.2,238.2 518.4,161.5 545.6,218.6 572.8,197.4 600.0,73.3 627.2,252.9 654.4,210.5 681.6,249.7 708.8,248.0 736.0,207.2 763.2,226.8 790.4,192.5 817.6,159.8 844.8,254.6 872.0,262.7 872.0,266.0" fill="#34d399" fill-opacity="0.18"/>
+<polyline points="56.0,207.2 83.2,251.3 110.4,148.4 137.6,225.2 164.8,257.8 192.0,264.4 219.2,230.1 246.4,212.1 273.6,203.9 300.8,184.3 328.0,168.0 355.2,194.1 382.4,261.1 409.6,266.0 436.8,189.2 464.0,217.0 491.2,238.2 518.4,161.5 545.6,218.6 572.8,197.4 600.0,73.3 627.2,252.9 654.4,210.5 681.6,249.7 708.8,248.0 736.0,207.2 763.2,226.8 790.4,192.5 817.6,159.8 844.8,254.6 872.0,262.7" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="56.0" cy="207.2" r="3.5" fill="#a78bfa"><title>2026-09-24: 36</title></circle>
+<circle cx="83.2" cy="251.3" r="3.5" fill="#a78bfa"><title>2026-09-25: 9</title></circle>
+<circle cx="110.4" cy="148.4" r="3.5" fill="#a78bfa"><title>2026-09-26: 72</title></circle>
+<circle cx="137.6" cy="225.2" r="3.5" fill="#a78bfa"><title>2026-09-27: 25</title></circle>
+<circle cx="164.8" cy="257.8" r="3.5" fill="#a78bfa"><title>2026-09-28: 5</title></circle>
+<circle cx="192.0" cy="264.4" r="3.5" fill="#a78bfa"><title>2026-09-29: 1</title></circle>
+<circle cx="219.2" cy="230.1" r="3.5" fill="#a78bfa"><title>2026-09-30: 22</title></circle>
+<circle cx="246.4" cy="212.1" r="3.5" fill="#a78bfa"><title>2026-10-01: 33</title></circle>
+<circle cx="273.6" cy="203.9" r="3.5" fill="#a78bfa"><title>2026-10-02: 38</title></circle>
+<circle cx="300.8" cy="184.3" r="3.5" fill="#a78bfa"><title>2026-10-03: 50</title></circle>
+<circle cx="328.0" cy="168.0" r="3.5" fill="#a78bfa"><title>2026-10-04: 60</title></circle>
+<circle cx="355.2" cy="194.1" r="3.5" fill="#a78bfa"><title>2026-10-05: 44</title></circle>
+<circle cx="382.4" cy="261.1" r="3.5" fill="#a78bfa"><title>2026-10-06: 3</title></circle>
+<circle cx="409.6" cy="266.0" r="3.5" fill="#a78bfa"><title>2026-10-07: 0</title></circle>
+<circle cx="436.8" cy="189.2" r="3.5" fill="#a78bfa"><title>2026-10-08: 47</title></circle>
+<circle cx="464.0" cy="217.0" r="3.5" fill="#a78bfa"><title>2026-10-09: 30</title></circle>
+<circle cx="491.2" cy="238.2" r="3.5" fill="#a78bfa"><title>2026-10-10: 17</title></circle>
+<circle cx="518.4" cy="161.5" r="3.5" fill="#a78bfa"><title>2026-10-11: 64</title></circle>
+<circle cx="545.6" cy="218.6" r="3.5" fill="#a78bfa"><title>2026-10-12: 29</title></circle>
+<circle cx="572.8" cy="197.4" r="3.5" fill="#a78bfa"><title>2026-10-13: 42</title></circle>
+<circle cx="600.0" cy="73.3" r="3.5" fill="#a78bfa"><title>2026-10-14: 118</title></circle>
+<circle cx="627.2" cy="252.9" r="3.5" fill="#a78bfa"><title>2026-10-15: 8</title></circle>
+<circle cx="654.4" cy="210.5" r="3.5" fill="#a78bfa"><title>2026-10-16: 34</title></circle>
+<circle cx="681.6" cy="249.7" r="3.5" fill="#a78bfa"><title>2026-10-17: 10</title></circle>
+<circle cx="708.8" cy="248.0" r="3.5" fill="#a78bfa"><title>2026-10-18: 11</title></circle>
+<circle cx="736.0" cy="207.2" r="3.5" fill="#a78bfa"><title>2026-10-19: 36</title></circle>
+<circle cx="763.2" cy="226.8" r="3.5" fill="#a78bfa"><title>2026-10-20: 24</title></circle>
+<circle cx="790.4" cy="192.5" r="3.5" fill="#a78bfa"><title>2026-10-21: 45</title></circle>
+<circle cx="817.6" cy="159.8" r="3.5" fill="#a78bfa"><title>2026-10-22: 65</title></circle>
+<circle cx="844.8" cy="254.6" r="3.5" fill="#a78bfa"><title>2026-10-23: 7</title></circle>
+<circle cx="872.0" cy="262.7" r="3.5" fill="#a78bfa"><title>2026-10-24: 2</title></circle>
+<text x="872" y="308" font-size="10" fill="#6e7681" text-anchor="end">Data through 2026-10-24 · generated in this repository</text>
+</g></svg>
