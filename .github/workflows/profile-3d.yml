@@ -1,0 +1,121 @@
+# Review pins before updating. Do not replace GITHUB_TOKEN with an owner PAT.
+# Only this workflow's publish job writes, and only to profile-3d-output.
+name: Animated green 3D contributions
+
+on:
+  schedule:
+    - cron: "37 11 * * *" # Daily at 11:37 UTC; main receives no generated commits.
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - README.md
+      - .github/workflows/profile-3d.yml
+      - .github/profile-3d.json
+      - scripts/profile_3d.py
+      - scripts/test_profile_3d.py
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-3d-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  generate:
+    if: github.repository == 'holland202/holland202'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Fetch the exact workflow source without persisted credentials
+        run: |
+          set -euo pipefail
+          git init -q src
+          git -C src remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git -C src fetch --depth=1 origin "${GITHUB_SHA}"
+          git -C src checkout --detach FETCH_HEAD
+
+      - name: Run existing and new checks
+        run: |
+          python3 src/scripts/test_activity_graph.py
+          python3 src/scripts/test_profile_3d.py
+
+      - name: Require zero restricted contribution counts
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 src/scripts/profile_3d.py guard --user "${GITHUB_REPOSITORY_OWNER}"
+
+      - name: Generate animated green graph (reviewed v0.9.3)
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          USERNAME: holland202
+          MAX_REPOS: "100"
+          SETTING_JSON: src/.github/profile-3d.json
+
+      - name: Recheck privacy and validate the generated SVG
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python3 src/scripts/profile_3d.py guard --user "${GITHUB_REPOSITORY_OWNER}"
+          python3 src/scripts/profile_3d.py validate profile-3d-contrib/profile-green-animate.svg
+
+      - name: Retain the validated SVG for review and publishing
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: profile-3d-green
+          path: profile-3d-contrib/profile-green-animate.svg
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    needs: generate
+    concurrency:
+      group: profile-3d-publish
+      cancel-in-progress: false
+    # PRs and manual runs on development branches can never publish.
+    if: >-
+      github.repository == 'holland202/holland202' &&
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Download only this run's validated SVG
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: profile-3d-green
+          path: out
+          digest-mismatch: error
+
+      - name: Revalidate with the trusted default-branch source
+        run: |
+          set -euo pipefail
+          git init -q src
+          git -C src remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git -C src fetch --depth=1 origin "${GITHUB_SHA}"
+          git -C src checkout --detach FETCH_HEAD
+          python3 src/scripts/profile_3d.py validate out/profile-green-animate.svg
+
+      - name: Publish a single-file snapshot to the dedicated output branch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd out
+          git init -q -b profile-3d-output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- profile-green-animate.svg
+          git commit -q -m "Animated green contribution graph, $(date -u +%F)"
+          # Replace only this generated branch; never main or the activity-graph output.
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)" \
+            push --force "https://github.com/${GITHUB_REPOSITORY}.git" HEAD:refs/heads/profile-3d-output

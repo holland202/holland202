@@ -94,6 +94,14 @@ Representative members:
 
 > Generated daily in this repository by [`scripts/activity_graph.py`](scripts/activity_graph.py) from GitHub's public contribution calendar. The image states the date of its last data point.
 
+### Animated green 3D contributions
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/holland202/holland202/profile-3d-output/profile-green-animate.svg" alt="Animated green 3D graph of public GitHub contributions over the past year" width="100%" />
+</p>
+
+> Updated daily with [`yoshi389111/github-profile-3d-contrib`](https://github.com/yoshi389111/github-profile-3d-contrib). Uses a token scoped to this public profile repository; private repositories are not accessed. Updates stop if GitHub reports restricted contribution counts. Generated images live on a separate branch.
+
 ---
 
 ### Contributions to other projects
