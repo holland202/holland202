@@ -16,6 +16,7 @@
 [![Research Dashboard](https://img.shields.io/badge/Research-Dashboard-22d3ee?style=for-the-badge)](https://holland202.github.io/principia-artificialis/dashboard.html)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Models%20%26%20Datasets-FFD21E?style=for-the-badge)](https://huggingface.co/holland202)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/chad-holland-aa364b408)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0004--1943--0585-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0004-1943-0585)
 
 *Vincit Omnia Veritas — Truth Conquers All*
 
@@ -49,6 +50,7 @@ My background is in industrial machine building. I began exploring AI research i
   - [Sovereign Evidence Bench dataset](https://huggingface.co/datasets/holland202/sovereign-evidence-bench) — benchmark artifacts and reproducibility material.
   - [LDE Cross-Substrate Research model repository](https://huggingface.co/holland202/lde-cross-substrate-research) — a research repository, **not a claim of a validated foundation model**.
 - **[LinkedIn](https://www.linkedin.com/in/chad-holland-aa364b408)** — professional background and research updates.
+- **[ORCID · 0009-0004-1943-0585](https://orcid.org/0009-0004-1943-0585)** — persistent public researcher identifier; not a certification of research findings.
 - **[Local Discovery Engine on Codeberg](https://codeberg.org/badatchess/local-discovery-engine)** — project source and experiments.
 
 *Vincit Omnia Veritas — Truth Conquers All.*
