@@ -181,14 +181,19 @@ Live status counts, evidence cards, open questions, and contribution entry point
 
 ### Collaboration
 
-Developers, researchers, engineers and independent contributors are invited to inspect public work, challenge hypotheses, report defects, and participate in reproducible research (voluntary, unpaid).
+**Open to ideas beyond my existing projects.** If you have something you want to build, investigate, test, document, or improve together, you're welcome to propose it—even if it has nothing to do with my current repositories.
 
-- [Research dashboard](https://holland202.github.io/principia-artificialis/dashboard.html)  
-- [principia-artificialis issues](https://github.com/holland202/principia-artificialis/issues)  
-- [Sovereign Veritas collaboration invitation](https://github.com/holland202/sovereign-veritas/issues/79)
+People from **any background or experience level** are welcome: developers, researchers, engineers, designers, writers, students, independent builders, and curious newcomers. Possibilities include new software, original experiments, reproducibility checks, adversarial review, documentation, accessibility, or a completely different idea you bring.
 
-Critical review and negative results are valued.  
-This profile does not list or link private repositories.
+- **Bring your own proposal.** You do not have to join one of my projects. Explain the goal, what you hope to contribute, and what kind of collaboration would help.
+- **Work on an existing project.** Inspect code, challenge hypotheses, reproduce results, report defects, or help with documentation and testing.
+- **Set the scope together.** Participation is voluntary and unpaid, at your own pace, with no obligation or fixed schedule. We can decide whether a project is a good fit before starting.
+
+**How to reach out:** For an existing public project, open an issue in its repository. For research-related ideas, [start with Principia Artificialis issues](https://github.com/holland202/principia-artificialis/issues), or use an existing public contact channel to share a proposal.
+
+Helpful starting points: [Research dashboard](https://holland202.github.io/principia-artificialis/dashboard.html) · [Principia Artificialis issues](https://github.com/holland202/principia-artificialis/issues) · [Sovereign Veritas collaboration invitation](https://github.com/holland202/sovereign-veritas/issues/79)
+
+**Critical review, contradictory evidence, and negative results are welcome.** Collaboration proposals are invitations to discuss, not automatic approval to modify a repository or run experiments. This profile does not list or link private repositories.
 
 ---
 
