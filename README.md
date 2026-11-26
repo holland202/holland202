@@ -60,15 +60,23 @@ My background is in industrial machine building. I began exploring AI research i
 ### Sovereign Research Lab
 
 <p align="center">
-  <img src="assets/research-command.svg" alt="Public research repository tips, commit hashes and UTC dates; not scientific verdicts" width="100%" />
+  <picture>
+    <source media="(max-width: 700px)" srcset="assets/research-command-mobile.svg" />
+    <img src="assets/research-command.svg" alt="Public research repository tips, commit hashes and UTC dates; not scientific verdicts" width="100%" />
+  </picture>
 </p>
+
+[Read the five full commit hashes and UTC dates](data/research-lab.json)
 
 **Repository telemetry:** [Principia Artificialis](https://github.com/holland202/principia-artificialis) · [Sovereign Veritas](https://github.com/holland202/sovereign-veritas) · [Sovereign Memory Layer](https://github.com/holland202/sovereign-memory-layer) · [Veritas Holo](https://github.com/holland202/veritas-holo) · [Veritas Science](https://github.com/holland202/veritas-science)
 
 > The checked-in snapshot records public main-branch commit tips, not experimental verdicts. The [refresh workflow](.github/workflows/research-lab.yml) checks daily and publishes only when source tips change; failed requests leave the previous dated source commits visible. For actual research status counts, open questions, evidence cards and reproduction records, use the [live Principia dashboard](https://holland202.github.io/principia-artificialis/dashboard.html). No combined hypothesis count or independent-validation count is inferred from commits.
 
 <p align="center">
-  <a href="https://holland202.github.io/principia-artificialis/dashboard.html"><img src="assets/research-ecosystem.svg" alt="Thematic research ecosystem with Principia Artificialis at the center" width="100%" /></a>
+  <a href="https://holland202.github.io/principia-artificialis/dashboard.html#research-constellation"><picture>
+    <source media="(prefers-reduced-motion: no-preference)" srcset="assets/research-ecosystem.svg" />
+    <img src="assets/research-ecosystem-static.svg" alt="Thematic research ecosystem with Principia Artificialis at the center" width="100%" />
+  </picture></a>
 </p>
 
 **Explore:** [Veritas Science](https://github.com/holland202/veritas-science) · [Sovereign Veritas](https://github.com/holland202/sovereign-veritas) · [Memory Layer](https://github.com/holland202/sovereign-memory-layer) · [Tiny Engine](https://huggingface.co/holland202/tiny-engine-165k) · [Quasar](https://github.com/holland202/quasar) · [Veritas Holo](https://github.com/holland202/veritas-holo)
@@ -113,7 +121,7 @@ AI-assisted development and review are disclosed in the source records. Negative
   <img src="https://streak-stats.demolab.com/?user=holland202&theme=dark&hide_border=true&background=0D1117&ring=34D399&fire=22D3EE&currStreakLabel=34D399" height="160" alt="Contribution streak" />
 </p>
 
-> Statistics are supplied by third-party services. Contribution totals may differ from public-repository activity depending on GitHub visibility settings and provider methodology.
+> Read each figure with its time window and unit. The activity chart covers 31 days, the 3D calendar covers a year, and the October category table counts repositories. These figures cannot be added together. Statistics cards are supplied by third-party services. Contribution totals may differ from public-repository activity depending on GitHub visibility settings and provider methodology.
 
 ---
 
@@ -250,6 +258,8 @@ Live status counts, evidence cards, open questions, and contribution entry point
 
 ---
 
+<a name="hugging-face-research-artifacts"></a>
+
 ### Hugging Face model laboratory
 
 **[holland202 on Hugging Face](https://huggingface.co/holland202)** — public experimental models, datasets and browser demos.
@@ -283,6 +293,8 @@ People from **any background or experience level** are welcome: developers, rese
 **How to reach out:** For an existing public project, open an issue in its repository. For research-related ideas, [start with Principia Artificialis issues](https://github.com/holland202/principia-artificialis/issues), or use an existing public contact channel to share a proposal.
 
 Helpful starting points: [Research dashboard](https://holland202.github.io/principia-artificialis/dashboard.html) · [Principia Artificialis issues](https://github.com/holland202/principia-artificialis/issues) · [Sovereign Veritas collaboration invitation](https://github.com/holland202/sovereign-veritas/issues/79)
+
+[Try a documented reproduction challenge](https://holland202.github.io/principia-artificialis/dashboard.html#reproduce) for prerequisites, commands, expected output, controls, and limits.
 
 **Critical review, contradictory evidence, and negative results are welcome.** Collaboration proposals are invitations to discuss, not automatic approval to modify a repository or run experiments. This profile does not list or link private repositories.
 
