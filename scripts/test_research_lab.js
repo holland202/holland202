@@ -33,3 +33,17 @@ test("API failure or malformed response rejects entire refresh",async()=>{
   await assert.rejects(refresh(rows,async()=>({ok:false,status:429})));
   await assert.rejects(refresh(rows,async()=>({ok:true,json:async()=>({name:"other"})})));
 });
+test("one malformed tip rejects a batch of otherwise valid responses", async () => {
+  const valid = {sha: "a".repeat(40), date: "2026-11-26T12:00:00Z"};
+  for (const invalid of [
+    {date: "2026-11-26INVALID"}, {date: "2026-11-26T24:00:00Z"},
+    {date: "2026-02-31T12:00:00Z"}, {sha: [valid.sha]},
+  ]) {
+    await assert.rejects(refresh(rows, async url => {
+      const tip = url.includes("/veritas-science/") ? {...valid, ...invalid} : valid;
+      return {ok: true, json: async () => ({
+        name: "main", commit: {sha: tip.sha, commit: {committer: {date: tip.date}}},
+      })};
+    }));
+  }
+});

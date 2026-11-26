@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="328" height="370" viewBox="0 0 328 370" role="img" aria-labelledby="title">
+    <title id="title">Repository command center, public main branch tips and UTC dates</title>
+    <rect width="328" height="370" rx="12" fill="#0d1117"/>
+    <g font-family="system-ui,sans-serif" fill="#e6edf3" font-size="14">
+    <text x="16" y="29" font-size="21" font-weight="700">Repository command center</text>
+    <text x="16" y="51" fill="#a6b6c7">Public main branches · UTC commit dates</text><g transform="translate(16 68)"><rect width="296" height="51" rx="7" fill="#151e29"/>
+      <text x="10" y="21" font-size="17" font-weight="600">Principia Artificialis</text>
+      <text x="10" y="41" fill="#67e8f9" font-family="monospace">86caa88fe79f</text>
+      <text x="286" y="41" text-anchor="end">2026-11-25</text></g><g transform="translate(16 127)"><rect width="296" height="51" rx="7" fill="#151e29"/>
+      <text x="10" y="21" font-size="17" font-weight="600">Sovereign Veritas</text>
+      <text x="10" y="41" fill="#67e8f9" font-family="monospace">da6a96ae91c6</text>
+      <text x="286" y="41" text-anchor="end">2026-11-14</text></g><g transform="translate(16 186)"><rect width="296" height="51" rx="7" fill="#151e29"/>
+      <text x="10" y="21" font-size="17" font-weight="600">Sovereign Memory</text>
+      <text x="10" y="41" fill="#67e8f9" font-family="monospace">5054809d67c1</text>
+      <text x="286" y="41" text-anchor="end">2026-11-13</text></g><g transform="translate(16 245)"><rect width="296" height="51" rx="7" fill="#151e29"/>
+      <text x="10" y="21" font-size="17" font-weight="600">Veritas Holo</text>
+      <text x="10" y="41" fill="#67e8f9" font-family="monospace">d1291d187a49</text>
+      <text x="286" y="41" text-anchor="end">2026-09-30</text></g><g transform="translate(16 304)"><rect width="296" height="51" rx="7" fill="#151e29"/>
+      <text x="10" y="21" font-size="17" font-weight="600">Veritas Science</text>
+      <text x="10" y="41" fill="#67e8f9" font-family="monospace">0c0a1b5cfffe</text>
+      <text x="286" y="41" text-anchor="end">2026-11-09</text></g></g></svg>
