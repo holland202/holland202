@@ -1,0 +1,37 @@
+[
+  {
+    "repo": "principia-artificialis",
+    "label": "Principia Artificialis",
+    "role": "Research program",
+    "sha": "86caa88fe79f5a67d80f818289c6db44ba3122fb",
+    "date": "2026-11-25"
+  },
+  {
+    "repo": "sovereign-veritas",
+    "label": "Sovereign Veritas",
+    "role": "Authorization gate",
+    "sha": "da6a96ae91c66dc15ce5aac78547be3ae8586e35",
+    "date": "2026-11-14"
+  },
+  {
+    "repo": "sovereign-memory-layer",
+    "label": "Sovereign Memory",
+    "role": "Offline memory",
+    "sha": "5054809d67c1725b23aebdf11cbf882bc681d9bb",
+    "date": "2026-11-13"
+  },
+  {
+    "repo": "veritas-holo",
+    "label": "Veritas Holo",
+    "role": "Geometric reasoning",
+    "sha": "d1291d187a49795e1413f26773ff1d17ba183bbc",
+    "date": "2026-09-30"
+  },
+  {
+    "repo": "veritas-science",
+    "label": "Veritas Science",
+    "role": "Scientific validation",
+    "sha": "0c0a1b5cfffebfc4e18e5963b8b81e5c66854b5a",
+    "date": "2026-11-09"
+  }
+]

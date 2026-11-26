@@ -48,12 +48,61 @@ My background is in industrial machine building. I began exploring AI research i
 - **[Hugging Face · @holland202](https://huggingface.co/holland202)** — public model and dataset repositories.
   - [LDE Cross-Substrate Research dataset](https://huggingface.co/datasets/holland202/lde-cross-substrate-research) — experimental results and evidence.
   - [Sovereign Evidence Bench dataset](https://huggingface.co/datasets/holland202/sovereign-evidence-bench) — benchmark artifacts and reproducibility material.
-  - [LDE Cross-Substrate Research model repository](https://huggingface.co/holland202/lde-cross-substrate-research) — a research repository, **not a claim of a validated foundation model**.
+  - [Tiny Engine 165K](https://huggingface.co/holland202/tiny-engine-165k) and [Tiny Stories 1M](https://huggingface.co/holland202/tiny-stories-1m) — experimental small models.
 - **[LinkedIn](https://www.linkedin.com/in/chad-holland-aa364b408)** — professional background and research updates.
 - **[ORCID · 0009-0004-1943-0585](https://orcid.org/0009-0004-1943-0585)** — persistent public researcher identifier; not a certification of research findings.
 - **[Local Discovery Engine on Codeberg](https://codeberg.org/badatchess/local-discovery-engine)** — project source and experiments.
 
 *Vincit Omnia Veritas — Truth Conquers All.*
+
+---
+
+### Sovereign Research Lab
+
+<p align="center">
+  <img src="assets/research-command.svg" alt="Public research repository tips, commit hashes and UTC dates; not scientific verdicts" width="100%" />
+</p>
+
+**Repository telemetry:** [Principia Artificialis](https://github.com/holland202/principia-artificialis) · [Sovereign Veritas](https://github.com/holland202/sovereign-veritas) · [Sovereign Memory Layer](https://github.com/holland202/sovereign-memory-layer) · [Veritas Holo](https://github.com/holland202/veritas-holo) · [Veritas Science](https://github.com/holland202/veritas-science)
+
+> The checked-in snapshot records public main-branch commit tips, not experimental verdicts. The [refresh workflow](.github/workflows/research-lab.yml) checks daily and publishes only when source tips change; failed requests leave the previous dated source commits visible. For actual research status counts, open questions, evidence cards and reproduction records, use the [live Principia dashboard](https://holland202.github.io/principia-artificialis/dashboard.html). No combined hypothesis count or independent-validation count is inferred from commits.
+
+<p align="center">
+  <a href="https://holland202.github.io/principia-artificialis/dashboard.html"><img src="assets/research-ecosystem.svg" alt="Thematic research ecosystem with Principia Artificialis at the center" width="100%" /></a>
+</p>
+
+**Explore:** [Veritas Science](https://github.com/holland202/veritas-science) · [Sovereign Veritas](https://github.com/holland202/sovereign-veritas) · [Memory Layer](https://github.com/holland202/sovereign-memory-layer) · [Tiny Engine](https://huggingface.co/holland202/tiny-engine-165k) · [Quasar](https://github.com/holland202/quasar) · [Veritas Holo](https://github.com/holland202/veritas-holo)
+
+The map shows thematic relationships, not verified software dependencies. Its motion is decorative and respects reduced-motion preferences in supporting SVG viewers.
+
+---
+
+### Sovereign Edge Lab
+
+**Development platform:** Samsung Galaxy S25 Ultra · Snapdragon 8 Elite (SM8750) · Android / Termux.
+
+| Layer | Platform / scope |
+|---|---|
+| CPU | Qualcomm Oryon; local development and CPU experimentation |
+| GPU | Adreno 830; hardware capability, not a claim of measured acceleration |
+| NPU | Hexagon / HTP; QNN research target, not a claim of validated offload |
+| Runtime interests | llama.cpp, local-first execution, memory and evidence verification |
+
+See the individual repositories for tested environments, thermal measurements and reproducibility limits. Some experiments also use non-phone environments; hardware availability does not establish successful acceleration.
+
+---
+
+### Failures are evidence — selected retained findings
+
+These are historical, bounded research records, not current overall release or security verdicts.
+
+| Record | Finding and boundary | Evidence |
+|---|---|---|
+| **CCC-001 / Stage Q** | Qwen2.5-1.5B-Instruct did not qualify; Q2 refuted. Direct instruction moved agreement by −0.0495 against a registered +0.10. Self-tested; no conclusion about conversation maturity. | [PR #172](https://github.com/holland202/principia-artificialis/pull/172) |
+| **SEC-004** | A registered stale-completion race produced SECURITY_FAIL. SEC-005 subsequently reported a fix in tested schedules; Android/Termux, network filesystems and independent validation were not established by that run. | [Failure #76](https://github.com/holland202/sovereign-veritas/pull/76) · [Bounded fix #98](https://github.com/holland202/sovereign-veritas/pull/98) |
+| **EO-1 / E5** | A no-op or wrong-action stand-in could return SUCCEEDED; the record did not prove the intended external effect. Marker-file experiment, self-tested. | [Results](https://github.com/holland202/sovereign-veritas/blob/main/docs/EO1_RESULTS.md) |
+
+AI-assisted development and review are disclosed in the source records. Negative findings remain visible after fixes; no new experiments were run for this profile update.
 
 ---
 
@@ -201,9 +250,23 @@ Live status counts, evidence cards, open questions, and contribution entry point
 
 ---
 
-### Hugging Face research artifacts
+### Hugging Face model laboratory
 
-**[huggingface.co/holland202](https://huggingface.co/holland202)** is the public companion to this GitHub account: [LDE research evidence](https://huggingface.co/datasets/holland202/lde-cross-substrate-research), [Sovereign Evidence Bench](https://huggingface.co/datasets/holland202/sovereign-evidence-bench), and [LDE model repository](https://huggingface.co/holland202/lde-cross-substrate-research). These are experimental artifacts, not endorsements or independently validated model-performance claims.
+**[holland202 on Hugging Face](https://huggingface.co/holland202)** — public experimental models, datasets and browser demos.
+
+| Artifact | Research scope | Explore |
+|---|---|---|
+| **Tiny Engine 165K** | Small-model in-context learning, induction and length generalization | [Model](https://huggingface.co/holland202/tiny-engine-165k) · [Browser demo](https://huggingface.co/spaces/holland202/tiny-engine-165k-demo) |
+| **Tiny Stories 1M** | CPU-trained byte-level text generation | [Model](https://huggingface.co/holland202/tiny-stories-1m) · [Browser demo](https://huggingface.co/spaces/holland202/tiny-stories-1m-demo) |
+| **RMT-IH-001** | Random matrix theory, interpretability and training dynamics | [Research model](https://huggingface.co/holland202/rmt-ih-001) |
+| **Sovereign Evidence Bench** | Evidence-boundary benchmark: 39 authored cases, 11 categories | [Dataset](https://huggingface.co/datasets/holland202/sovereign-evidence-bench) |
+| **LDE Cross-Substrate Research** | Preregistered experiment records, including negative results | [Dataset](https://huggingface.co/datasets/holland202/lde-cross-substrate-research) |
+| **Sovereign Veritas prediction ledger** | Registered prediction outcome lines | [Dataset](https://huggingface.co/datasets/holland202/sovereign-veritas-prediction-ledger) |
+
+[Evidence Atlas](https://huggingface.co/spaces/holland202/sovereign-evidence-atlas) · [Liar's Note](https://huggingface.co/spaces/holland202/liars-note)
+
+These are experimental artifacts, not endorsements or independently validated general model-performance claims. Follow individual model cards and evidence records for specific limitations.
+
 
 ---
 
